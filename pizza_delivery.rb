@@ -22,6 +22,7 @@ require_relative "pizza.rb"
 done = false
 
 menu_bas_pizza_winkel = Menu.new
+# => PAY ATTENTION: different menu name than exercize
 
 puts "Hello welcome to Bas' pizza Winkel!"
 
@@ -37,6 +38,7 @@ while not done
   case choice
   when 1
     menu_bas_pizza_winkel.print_menu
+    # => PAY ATTENTION: different menu name than exercize
   when 2
     done = true
   else

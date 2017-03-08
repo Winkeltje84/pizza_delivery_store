@@ -18,6 +18,7 @@ class Menu
   end
 
   #method to PRINT the MENU
+  # => PAY ATTENTION: different METHOD NAME than exercize
   def print_menu
     puts "See what awesome pizza's we have!\n"
 
