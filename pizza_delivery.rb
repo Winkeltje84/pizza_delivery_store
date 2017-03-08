@@ -46,6 +46,8 @@ while not done
     order = order_customer.add_pizza(pizza)
   when 2
     done = true
+  when 3
+    order_customer.print
   else
     puts "I don't understand..."
   end

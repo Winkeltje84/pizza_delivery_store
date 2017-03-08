@@ -21,4 +21,11 @@ class Order
     @content.reduce(0) { |sum, pizza| sum + pizza.price }
   end
 
+  def print
+    puts "Your order is:"
+    puts "*" * 30
+    @content.each { |pizza| puts "#{pizza.name} - #{pizza.price}"}
+    puts "*" * 30
+  end
+
 end
