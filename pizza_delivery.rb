@@ -39,6 +39,8 @@ while not done
   when 1
     menu_bas_pizza_winkel.print_menu
     # => PAY ATTENTION: different menu name than exercize
+    pizza = menu_bas_pizza_winkel.make_choice
+    puts "TEST#{pizza.name}"
   when 2
     done = true
   else

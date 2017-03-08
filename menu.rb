@@ -29,5 +29,16 @@ class Menu
     @pizzas.each do |pizza|
       puts "#{pizza.number}: #{pizza.name} - #{pizza.ingredients}"
     end
+    puts "-" * 30
   end
+
+  #method that asks user for input which pizza he wants (the number)
+  # => the pizza will be looked up and returned
+  def make_choice
+    puts "Which pizza would you like? Please mention the number:"
+    chosen_number = gets.chomp.to_i
+
+    @pizzas.find {|pizza| pizza.number == chosen_number}
+  end
+
 end
