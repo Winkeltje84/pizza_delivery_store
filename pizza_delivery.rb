@@ -48,6 +48,11 @@ while not done
     done = true
   when 3
     order_customer.print
+    puts "How do you wish to pay? Please type the option number:"
+    puts "1: Ideal"
+    puts "2: Creditcard"
+    payment = gets.chomp.to_i
+    done = ( payment == 1 || payment == 2) # => (payment == 1 || payment == 2) Checks if the value of payment is either 1 or 2. You have to make 2 checks for this.
   else
     puts "I don't understand..."
   end
