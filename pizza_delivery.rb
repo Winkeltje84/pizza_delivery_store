@@ -18,11 +18,13 @@ There will also be a main file for the program.
 
 require_relative "menu.rb"
 require_relative "pizza.rb"
+require_relative "order.rb"
 
 done = false
 
 menu_bas_pizza_winkel = Menu.new
 # => PAY ATTENTION: different menu name than exercize
+order_customer = Order.new
 
 puts "Hello welcome to Bas' pizza Winkel!"
 
@@ -41,6 +43,8 @@ while not done
     # => PAY ATTENTION: different menu name than exercize
     pizza = menu_bas_pizza_winkel.make_choice
     puts "TEST#{pizza.name}"
+    order = order_customer.add_pizza(pizza)
+    puts "Test order: #{order}"
   when 2
     done = true
   else
