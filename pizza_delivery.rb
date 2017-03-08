@@ -20,6 +20,8 @@ require_relative "menu.rb"
 
 done = false
 
+menu_bas_pizza_winkel = Menu.new
+
 puts "Hello welcome to Bas' pizza Winkel!"
 
 #below while-loop will run untill variable 'done' == true
