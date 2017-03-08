@@ -1,7 +1,7 @@
 #menu class to be used by pizza_delivery.rb
 require_relative = "pizza.rb"
 
-class menu
+class Menu
   attr_accessor :pizzas
 
   #an ARRAY of pizzas is created and 6 pizzas are added with the attributes
