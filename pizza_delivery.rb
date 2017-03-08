@@ -33,6 +33,7 @@ while not done
   puts "What can I do for you?"
   puts "1: Order a pizza"
   puts "2: Nothing"
+  puts "3: Check out (€ #{order_customer.value_order})" if order_customer.value_order > 0
   puts "-" * 30
 
   #gets choice from user
@@ -42,9 +43,7 @@ while not done
     menu_bas_pizza_winkel.print_menu
     # => PAY ATTENTION: different menu name than exercize
     pizza = menu_bas_pizza_winkel.make_choice
-    puts "TEST#{pizza.name}"
     order = order_customer.add_pizza(pizza)
-    puts "Test order: #{order}"
   when 2
     done = true
   else
