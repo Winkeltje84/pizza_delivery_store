@@ -16,6 +16,8 @@ There will also be a main file for the program.
 
 =end
 
+require_relative "menu.rb"
+
 done = false
 
 puts "Hello welcome to Bas' pizza Winkel!"
