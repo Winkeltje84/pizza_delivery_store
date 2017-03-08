@@ -1,5 +1,6 @@
 #menu class to be used by pizza_delivery.rb
-require_relative = "pizza.rb"
+
+require_relative = "pizza"
 
 class Menu
   attr_accessor :pizzas

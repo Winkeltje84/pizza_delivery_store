@@ -17,6 +17,7 @@ There will also be a main file for the program.
 =end
 
 require_relative "menu.rb"
+require_relative "pizza.rb"
 
 done = false
 
@@ -35,7 +36,7 @@ while not done
   choice = gets.chomp.to_i
   case choice
   when 1
-    puts "Let me show you the menu"
+    menu_bas_pizza_winkel.print_menu
   when 2
     done = true
   else
