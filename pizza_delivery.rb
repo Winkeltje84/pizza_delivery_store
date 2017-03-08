@@ -18,9 +18,34 @@ There will also be a main file for the program.
 
 done = false
 
-put "Hello welcome to Bas' pizza Winkel!"
+puts "Hello welcome to Bas' pizza Winkel!"
 
 #below while-loop will run untill variable 'done' == true
 while not done
-  
+  puts "What can I do for you?"
+  puts "1: Order a pizza"
+  puts "2: Nothing"
+  puts "-" * 30
+
+  #gets choice from user
+  choice = gets.chomp.to_i
+  case choice
+  when 1
+    puts "Let me show you the menu"
+  when 2
+    done = true
+  else
+    puts "I don't understand..."
+  end
+
+  #says goodbye if the customer is leaving
+  if done
+    puts "Thank you for your visit! hope to see you again soon."
+    puts "   __"
+    puts " // \"\"--.._"
+    puts "||  (_)  _ \"-._"
+    puts "||    _ (_)    '-."
+    puts "||   (_)   __..-'"
+    puts " \\__..--\"\""
+  end
 end
